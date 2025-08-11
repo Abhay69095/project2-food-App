@@ -1,0 +1,173 @@
+.dishes-menu {
+            width: 100%;
+            margin: 0 ;
+            padding: 20px;
+        }
+        .back-btn {
+            display: inline-block;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 26px;
+        }
+        .pageheader {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 95%;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            gap: 20px;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 20%;
+            margin: 20px auto;
+            margin-top: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            background-color: var(--secondary-color);
+        }
+        .rating-ctn {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            margin-top: 10px;
+            padding: 5px;
+        }
+        .price {
+            font-size: 20px;
+            color: var(--text-color);
+        }
+        .rating {
+            font-size: 18px;
+            color: var(--text-color);
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        .add-to-cart {
+            padding: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            background: none;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            transform: scale(1);
+        }
+        .Order-btn {
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: var(--primary-color);
+            color: white;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            transform: scale(1);
+        }
+        .cards h2 {
+            font-size: 30px;
+            color: var(--text-color);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .cards img {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .menu-item h3 {
+            font-size: 20px;
+            color: var(--text-color);
+            text-align: center;
+            margin-top: 10px;
+            display: block;
+        }
+        .pageheader {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+
+        /* Responsive Design */
+@media (max-width: 1024px) {
+    .cards {
+        width: 40%;
+        padding: 15px;
+    }
+    .pageheader {
+        gap: 15px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cards {
+        width: 80%;
+        margin: 10px auto;
+        padding: 10px;
+    }
+    .pageheader {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 5px;
+    }
+    .cards img {
+        height: 150px;
+    }
+    .add-to-cart, .Order-btn {
+        font-size: 14px;
+        padding: 4px;
+    }
+}
+
+@media (max-width: 480px) {
+    .rating-ctn {
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .buttons {
+        justify-content: space-evenly;
+    }
+    .dishes-menu {
+        padding: 5px;
+    }
+    .cards {
+        width: 98%;
+        padding: 5px;
+        margin: 5px auto;
+    }
+    .cards img {
+        height: 200px;
+    }
+    .cards h3 {
+        font-size: 16px;
+    }
+
+
+    .price, .rating {
+        font-size: 14px;
+    }
+    .add-to-cart, .Order-btn {
+        font-size: 12px;
+        padding: 3px;
+    }
+}
